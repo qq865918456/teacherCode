@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 将xxx和spring整合  无非就是让spring管理这些第三方框架/组价的一些对象 IOC -->
+
+    <!-- 配置流程引擎配置对象 -->
+    <bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="transactionManager" ref="transactionManager"/>
+        <!-- 如果没有表结构则自动创建 -->
+        <property name="databaseSchemaUpdate" value="true"/>
+    </bean>
+
+
+    <!-- 配置流程引擎对象 -->
+    <bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+        <property name="processEngineConfiguration" ref="processEngineConfiguration"/>
+    </bean>
+
+</beans>

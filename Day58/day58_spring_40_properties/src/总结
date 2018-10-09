@@ -1,0 +1,7 @@
+
+
+
+1.属性文件的读取
+	1)<context:property-placeholder>
+		a)location:指定配置文件的路径
+	2)通过${key}获取

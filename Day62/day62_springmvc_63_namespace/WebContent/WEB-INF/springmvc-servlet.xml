@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xmlns:context="http://www.springframework.org/schema/context"
+	  xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+	<!-- 开启注解驱动 
+		作用:在SpringMVC容器中注册一些常用的bean
+	-->
+	<mvc:annotation-driven/>
+
+	<!-- 开启包扫描 -->
+	<context:component-scan base-package="com.qf.controller" />
+
+	
+	<!-- 静态资源(*.js,*.clss,*.png,*.html,*.ftm)的忽略 -->
+	<!-- 
+		locaiton:静态资源的位置
+		mapping:静态资源的访问路径
+	 -->
+	 <!-- 
+	 	由SprinMVC忽略静态资源
+	  -->
+	<mvc:resources location="/js/*" mapping="/js/*"></mvc:resources>
+	
+	<!-- 第二种静态资源忽略的方式 
+		把SpringMVC处理不了的请求交给指定的servlet
+	-->
+	
+	<!-- 
+	defaultServlet:是tocmat提供的一个Servlet，里面做的事情就是IO流读写
+	 -->
+<!-- 	<mvc:default-servlet-handler default-servlet-name="default"/> -->
+	
+	<!-- 视图解析器 -->
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>

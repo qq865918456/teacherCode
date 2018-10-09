@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+
+<!-- 默认配置，如果没有指定则使用这个配置 -->
+  <default-config>
+  
+	<!-- 基本配置 -->
+	<property name="driverClass">com.mysql.jdbc.Driver</property>
+	<property name="jdbcUrl">jdbc:mysql://localhost:3306/1804_shop</property>
+	<property name="user">root</property>
+	<property name="password">root</property>
+	
+	 <!--扩展配置-->
+	<!-- 当连接池用完时客户端调用getConnection()后等待获取新连接的时间，超时后将抛出 
+　　SQLException,如设为0则无限期等待。单位毫秒 -->
+    <property name="checkoutTimeout">3000</property>
+	
+    <!-- 每60秒检查所有连接池中的空闲连接 -->
+	<property name="idleConnectionTestPeriod">30</property>
+    <property name="initialPoolSize">10</property>
+	<property name="maxPoolSize">10</property>
+	<property name="minPoolSize">5</property>
+  </default-config>
+  
+  
+  <!-- 命名的配置 -->
+  <named-config name="dataSource1">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/1804_mysql
+		</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+
+		<!-- 当连接池用完时客户端调用getConnection()后等待获取新连接的时间，超时后将抛出 SQLException,如设为0则无限期等待。单位毫秒 -->
+		<property name="checkoutTimeout">3000</property>
+
+		<!-- 每60秒检查所有连接池中的空闲连接 -->
+		<property name="idleConnectionTestPeriod">30</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxPoolSize">10</property>
+		<property name="minPoolSize">5</property>
+	</named-config>
+  
+  
+</c3p0-config>

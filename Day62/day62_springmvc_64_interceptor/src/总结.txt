@@ -1,0 +1,21 @@
+
+
+
+1.拦截器
+	a)定义拦截器
+		1)实现HandlerInterceptor接口
+			a)视图解析之前
+			b)视图解析之后
+			c)Controller执行之前
+				1)object:
+					a)开启注解驱动是HandlerMethod
+		 			b)没有开启注解驱动ControllerBean
+	b)配置
+		1)<mvc:interceptors>
+			a)<mvc:interceptor>
+				1)<bean>:拦截器的bean
+				2)<ref>:引向外部的bean
+				3)<mvc:mapping>:需要被拦截的路径
+					a)/*:只拦截一层
+					b)/**:可以拦截多层
+				4)<mvc:exclude-mapping>:不需要被拦截的路径，从/开始

@@ -1,0 +1,16 @@
+
+
+
+1.Spring和Hibernate整合
+	a)导入各自的jar包
+		1)spring-orm.jar
+	b)配置文件
+		1)把数据源交给Spring维护
+	c)配置
+		1)LocalSessionFactoryBean(sessionFacotry)
+			a)注入数据源
+			b)hibnerate核心配置文件
+		2)HibernateTransactionManager(Hibnerate自己提供的一个事务管理器)
+			a)注入sessionFactory
+	d)Dao层继承HibernateTemplate
+		1)注入sessionFactory

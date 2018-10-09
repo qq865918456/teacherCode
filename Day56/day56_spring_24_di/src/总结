@@ -1,0 +1,14 @@
+
+
+
+1.IOC:控制反转
+	1)DI(依赖注入):依赖了Spring容器注入的那个对象
+2.赋值
+	1)对象:<ref>
+	2)普通属性:<value>
+	3)list:<list>
+	4)map:<props>
+3.如何在配置文件中建立父子类关系
+	1)<bean>
+		a)parent:父类
+		b)abstract:设为true,Spring不会帮我们实例化

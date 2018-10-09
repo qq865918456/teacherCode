@@ -1,0 +1,33 @@
+package com.qf.oa.controller;
+
+import com.qf.oa.entity.Student;
+import com.qf.oa.service.IStuService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
+
+@Controller
+@RequestMapping("/stu")
+public class StuController {
+
+
+    @Autowired
+    private IStuService stuService;
+
+
+    @RequestMapping("/queryall")
+    @ResponseBody
+    public String queryAll(){
+
+        //返回值：ctrl + alt + v
+        List<Student> stus = stuService.querAll();
+        for (Student student : stus) {
+            System.out.println(student);
+        }
+
+        return "OK!!";
+    }
+}

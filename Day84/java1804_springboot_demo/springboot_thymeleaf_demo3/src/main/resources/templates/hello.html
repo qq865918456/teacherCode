@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Hello Thymelaeaf!!!!!<br/>
+
+    姓名：<a th:text="${name}">默认值</a><br/>
+    年龄：<input name="age" th:value="${age}" value="0"/><br/>
+    地址：<span th:text="|中国${address}|"></span><br/>
+    地址：<span th:text="'中国' + ${address}"></span><br/>
+    状态：<a th:if="${age >= 18}">
+             成年
+         </a>
+         <a th:unless="${age >= 18}">
+             未成年
+         </a>
+         <a th:text="${age >= 18 ? '成年' : '未成年'}"></a><br/>
+
+    爱好：<a th:each="data : ${datas}">
+            <a th:text="${data}"></a>
+         </a><br/>
+    获得集合的长度：<a th:text="${#arrays.length(datas)}"></a><br/>
+
+    生日：<a th:text="${#dates.format(birthday, 'yyyy-MM-dd')}"></a>
+</body>
+</html>

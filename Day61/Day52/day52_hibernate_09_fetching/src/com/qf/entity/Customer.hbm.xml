@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.qf.entity">
+	
+	<class name="Customer" table="t_customer" lazy="false">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name"/>
+
+	<!-- 
+		fetch:决定的sql语句	
+			1)select:普通查询
+			2)join:连接查询
+			3)subselect:子查询
+			
+		lzay:决定的懒载的程度
+			1)true:懒惰
+			2)fales:不懒惰
+			3)extra:极其懒惰
+			
+			
+		fetch=select
+			lazy=true:普通查询，客户订单只有使用到了才会查询,
+			lazy=false:普通查询，客户订单不管用不用都会查询,
+			lazy=extra:查询订单数量的时候用统计查询(count(*))，订单使用的时候才会查询
+			
+		fetch=join
+			lzay属性设置无效(由于连接查询语法本身原因，至少由两张表)			
+			
+		fetch=subselect(在hql的查询情况下才可以看出和select区别)
+			lazy=true:普通查询，客户订单只有使用到了才会查询,
+			lazy=false:普通查询，客户订单不管用不用都会查询,
+			lazy=extra:查询订单数量的时候用统计查询(count(*))，订单使用的时候才会查询
+			
+	 -->
+	<set name="orderInfo" fetch="subselect" lazy="true">
+		<key column="customer_id"/>
+		<one-to-many class="OrderInfo"/>
+	</set>		
+		
+	</class>
+
+</hibernate-mapping>

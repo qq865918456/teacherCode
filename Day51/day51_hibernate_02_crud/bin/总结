@@ -1,0 +1,9 @@
+
+
+
+1.实现Hibernatecrud
+	1)add
+		a)事务提交
+	2)udpate/delete
+		a)先查询再更新
+	3)如果不村子表或者字段会自动创建

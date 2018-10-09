@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dubbo_provider" />
+        <module name="java1804_springboot_demo" />
+        <module name="springboot_demo1" />
+        <module name="springboot_mybatis_demo2" />
+        <module name="springboot_thymeleaf_demo3" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dubbo_provider" target="1.8" />
+      <module name="java1804_springboot_demo" target="1.5" />
+      <module name="springboot_demo1" target="1.8" />
+      <module name="springboot_mybatis_demo2" target="1.8" />
+      <module name="springboot_thymeleaf_demo3" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

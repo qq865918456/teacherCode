@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- 1.配置数据源 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/1804_mysql"></property>
+		<property name="user" value="root"></property>
+		<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+		<property name="password" value="root"></property>
+	</bean>
+	
+	<!-- 2.配置userDao -->
+	<bean id="userDao" class="com.qf.dao.impl.UserDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+</beans>

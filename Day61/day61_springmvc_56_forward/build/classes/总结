@@ -1,0 +1,17 @@
+
+
+
+1.Controller中访问ServletAPI
+	1)方法上面定义接收就可以
+2.SpringMVC中的转发和重定向
+	1)转发
+		a)返回直接视图名称(不需要加后缀)
+		b)返回字符串("forward:ok.jsp")要加后缀
+		c)如果要携带数据
+			1)ModelMap
+	2)重定向
+		a)返回字符串("redirect:ok.jsp")要加后缀
+		b)如果ModelMap中存在数据是放到地址栏中的
+3.乱码
+	1)程序(写)[iso-8859-1]-->Toamct【iso-8859-1】-->jsp(读)[utf-8]
+	2)读和写的编码保持一致乱码的问题就能解决

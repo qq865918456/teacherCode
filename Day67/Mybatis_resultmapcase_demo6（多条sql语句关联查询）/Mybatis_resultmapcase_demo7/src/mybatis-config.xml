@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- <settings>
+		全局开启延迟加载 - 默认是关闭的
+		<setting name="lazyLoadingEnabled" value="true"/>
+	</settings> -->
+
+	<typeAliases>
+		<!-- 自定义别名 
+		<typeAlias type="com.qf.entity.User" alias="user"/>-->
+		<!-- 默认扫描指定包下的所有类，生成别名 - 类名首字母小写 -->
+		<package name="com.qf.entity"/>
+	</typeAliases>
+	
+
+	<environments default="development">
+		<!-- 数据库的管理配置 -->
+		<environment id="development">
+			<!-- 事务管理器 - 默认使用JDBC的事务管理器 -->
+			<transactionManager type="JDBC" />
+			<!-- 数据源 - 连接池用的是mybatis的默认连接池 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql:///mybatisdb" />
+				<property name="username" value="root" />
+				<property name="password" value="root" />
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<!-- 映射文件的管理-->
+	<mappers>
+		<!-- -->
+		<mapper resource="com/qf/mapper/StudentMapper.xml" /> 
+		<mapper resource="com/qf/mapper/ClasstabMapper.xml" /> 
+		<!-- <package name="com/qf/mapper/*.xml"/> -->
+	</mappers>
+	 
+</configuration>

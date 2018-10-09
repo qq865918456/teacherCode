@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- xml文件的dtd约束 -->
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qf.mapper.IStudentMapper">
+	
+	<resultMap type="student" id="studentMap">
+		
+		<result property="cid" column="cid"/>
+		<!-- 对一
+			property：学生表中的班级属性的名称
+			column：外键的名称(班级表在学生表中的外键 - cid)
+			select：进行关联查询的sql语句
+		 -->
+		<association fetchType="lazy" property="ctab" column="cid" select="com.qf.mapper.IClasstabMapper.queryOne"/>
+	</resultMap>
+	
+	
+	<select id="queryOne" resultMap="studentMap">
+		select * from student where id = #{id}
+	</select>
+	
+	<select id="queryAll" resultMap="studentMap">
+		select * from student
+	</select>
+	
+	<select id="queryAllByCid" resultType="student">
+		select * from student where cid = #{cid}
+	</select>
+	
+</mapper>
+

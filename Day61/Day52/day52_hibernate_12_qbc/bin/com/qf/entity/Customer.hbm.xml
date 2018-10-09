@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.qf.entity">
+
+	<class name="Customer" table="t_customer">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name" />
+
+		<set name="orderInfo" batch-size="3">
+			<key column="customer_id" />
+			<one-to-many class="OrderInfo" />
+		</set>
+		
+		<!-- 局部命名查询 -->
+		<query name="query2">
+			from Customer c where c.id = 19
+		</query>
+		
+	</class>
+	
+	<!-- 全局的命名查询 -->
+	<query name="query1">
+		from Customer c where c.id = :id
+	</query>
+	
+
+</hibernate-mapping>

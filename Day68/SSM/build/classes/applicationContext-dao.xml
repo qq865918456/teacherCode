@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" 
+       xmlns:mybaits="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://mybatis.org/schema/mybatis-spring
+       http://mybatis.org/schema/mybatis-spring.xsd">
+
+	<!-- 扫描mybatis的映射接口 -->
+	<mybaits:scan base-package="com.qf.ssm.mapper"/>
+
+
+    <!-- dao层的sqlsessionfactorybean -->
+    <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+    	<!-- 配置数据源 -->
+    	<property name="dataSource" ref="dataSource"/>
+    	<!-- 统一管理mybatis的映射文件 -->
+    	<property name="mapperLocations" value="classpath:com/qf/ssm/mapper/*.xml"></property>
+    	<!-- 别名的配置 -->
+    	<property name="typeAliasesPackage" value="com.qf.ssm.entity"></property>
+    	<!-- 加载mybatis的核心配置文件 -->
+    	<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+    </bean>
+
+</beans>

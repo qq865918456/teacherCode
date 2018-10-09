@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- xml文件的dtd约束 -->
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 映射文件的核心配置
+	namespace：配置映射接口的路径
+ -->
+<mapper namespace="com.qf.mapper.IUserMapper">
+
+	<sql id="sqlname">
+		id,name,age
+	</sql>
+
+	<!-- 配置映射接口中的对应方法实现 
+		id:映射接口中的方法名称
+	-->
+	<select id="queryUserById" parameterType="int" resultType="user">
+		select * from user where id = #{id}
+	</select>
+	
+	<select id="queryUserByParams" resultType="user">
+		select <include refid="sqlname"/> 
+		<![CDATA[	
+			from user where name = #{user1.name} and age < #{user2.age}
+		]]>
+	</select>
+	
+	<select id="queryLikeByName" resultType="user">
+		select * from user where name like concat('%', #{name}, '%')
+	</select>
+	
+	<select id="queryAll" resultType="user">
+		select <include refid="sqlname"/> from user limit #{a}, #{b}
+	</select>
+	
+	<select id="queryAll2" resultType="user">
+		select id,name,age from user
+	</select>
+	
+	<insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+		insert into user value(null,#{name},#{age})
+	</insert>
+	
+	<insert id="insertUser2" useGeneratedKeys="true" keyProperty="id">
+		insert into user value(null,#{name},#{age})
+	</insert>
+	
+	<select id="queryById" resultType="user">
+		select ${columns} from user where id = #{id}
+	</select>
+	
+</mapper>
+

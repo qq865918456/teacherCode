@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.qf.entity">
+	
+	<class name="Customer" table="t_customer">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name"/>
+
+	<!-- 客户和订单是一对多 -->
+	<!-- 
+		name:一的方中保存多的一方集合名称
+		inverse:把中间字段的维护权交个另一方
+	 -->
+	 
+	<set name="orderInfo" inverse="true">
+		<!-- key配置的就是订单和客户的关联字段 -->
+		<key column="customer_id"/>
+		<!-- 
+			class:另一方类型
+		 -->
+		<one-to-many class="OrderInfo"/>
+	</set>		
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+
+	<!-- 
+		autowire：
+			a)byName:根据名称注入
+				1)以对象中属性名称参考，去Spring容器去找，如果有就注入，没有就不注入
+			b)byType:根据类型注入
+				1)以对象中属性类型参考，去Spring容器去找，如果有就注入(如果有一个就正常注入，如果有多个就抛出异常)，没有就不注入
+	 -->	
+	<bean id="userService" class="com.qf.service.impl.UserServiceImpl" autowire="byName">
+		<!-- 手动注入 -->
+<!-- 		<property name="userDao" ref="userDao"></property> -->
+	</bean>
+	
+	<bean id="userDao" class="com.qf.dao.impl.UserDaoImpl"></bean>
+	
+	<!-- 调用有参 -->
+	<bean id="userDao2" class="com.qf.dao.impl.UserDaoImpl">
+		<!-- 通过方法形参的索引赋值 -->
+<!-- 		<constructor-arg index="0" value="admin"></constructor-arg> -->
+<!-- 		<constructor-arg index="1" value="12"></constructor-arg> -->
+
+		<!-- 通过方法形参的名称赋值 -->
+<!-- 		<constructor-arg name="name" value="qf"></constructor-arg> -->
+<!-- 		<constructor-arg name="age" value="22"></constructor-arg> -->
+		
+		<!-- 通过方法形参的类型赋值 -->
+		<constructor-arg type="java.lang.Integer" value="1"></constructor-arg>
+		<constructor-arg type="java.lang.Integer" value="22"></constructor-arg>
+		<constructor-arg type="java.lang.String" value="zhang"></constructor-arg>
+	</bean>
+	
+</beans>

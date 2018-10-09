@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.qf.entity">
+	
+	<class name="OrderInfo" table="t_order">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="orderName" column="order_name"/>
+		
+		<!-- 订单和客户是多对一 -->
+		<!-- name:多的一方中保存一的一方对象名称 -->
+		<many-to-one name="customer">
+			<!-- 关联外键 -->
+			<column name="customer_id"></column>
+		</many-to-one>
+	</class>
+
+</hibernate-mapping>

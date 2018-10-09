@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- xml文件的dtd约束 -->
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qf.mapper.IStudentMapper">
+	
+	<resultMap type="student" id="studentMap">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="age" property="age"/>
+		<result column="cid" property="cid"/>
+			
+		<!-- 对一 -->
+		<association property="ctab" javaType="classtab">
+			<id column="cid" property="id"/>
+			<result column="cname" property="cname"/>
+			<result column="cnumber" property="cnumber"/>
+		</association>
+	</resultMap>
+	
+	<select id="queryOne" resultMap="studentMap">
+		select * from student s join classtab c on s.cid = c.id where s.id = #{id}
+	</select>
+	
+</mapper>
+

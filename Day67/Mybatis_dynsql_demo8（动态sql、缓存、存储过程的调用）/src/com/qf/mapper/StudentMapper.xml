@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- xml文件的dtd约束 -->
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qf.mapper.IStudentMapper">
+	
+	<!-- 开启二级缓存 -->
+	<cache/>
+	
+	<resultMap type="student" id="studentMap">
+		
+		<result property="cid" column="cid"/>
+		<!-- 对一
+			property：学生表中的班级属性的名称
+			column：外键的名称(班级表在学生表中的外键 - cid)
+			select：进行关联查询的sql语句
+		 -->
+		<association fetchType="lazy" property="ctab" column="cid" select="com.qf.mapper.IClasstabMapper.queryOne"/>
+	</resultMap>
+	
+	
+	<select id="queryOne" resultMap="studentMap">
+		select * from student where id = #{id}
+	</select>
+	
+	<select id="queryAll" resultMap="studentMap">
+		select * from student
+	</select>
+	
+	<select id="queryAllByCid" resultType="student">
+		select * from student where cid = #{cid}
+	</select>
+	
+	<select id="queryStuInfoByEntity" resultType="student">
+		<!-- select * from student 
+		<where>
+			<if test="name != null and name != ''">
+				and name = #{name}
+			</if>
+			<if test="age != null">
+				and age = #{age}
+			</if>
+		</where> -->
+		
+		select * from student where 
+		<trim prefixOverrides="and">
+			<if test="name != null and name != ''">
+				and name = #{name}
+			</if>
+			<if test="age != null">
+				and age = #{age}
+			</if>
+		</trim>	
+	</select>
+	
+	<update id="updateStudent">
+		update student
+		<set>
+			<if test="name != null and name != ''">
+				name = #{name},
+			</if>
+			<if test="age != null">
+				age = #{age},
+			</if>
+			<if test="cid != null">
+				cid = #{cid},
+			</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="deleteByIds">
+		delete from student where id in
+		<foreach collection="ids" item="a" open="(" close=")" separator=",">
+			#{a}
+		</foreach>
+	</delete>
+	
+	<insert id="insertStudents">
+		insert into student values
+		<foreach collection="slist" item="stu" separator=",">
+			(null, #{stu.name}, #{stu.age}, #{stu.cid})
+		</foreach>
+	</insert>
+	
+	
+	<!-- 调用存储过程
+		statementType:statment的类型
+		Statment
+		PrepareStatment
+		CallableStatment - 执行存储过程
+	 -->
+	<insert id="callProcedure1" statementType="CALLABLE">
+		{call myprcedure3(#{name}, #{age}, #{cid})}
+	</insert>
+	
+	<select id="callProcedure2" statementType="CALLABLE" useCache="false">
+		{call myprcedure2(#{id, mode=IN}, #{name, mode=OUT, jdbcType=VARCHAR})}
+	</select>
+	
+</mapper>
+

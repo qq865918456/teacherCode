@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+	<!-- 1.目标对象 -->
+	<bean id="userDao" class="com.qf.dao.impl.UserDaoImpl"></bean>
+
+	<!-- 2.增强 -->
+	<bean id="tx" class="com.qf.advices.TransactionManager"></bean>
+	
+	<!-- 3.切面 -->
+	<bean id="myAspectj" class="com.qf.aspectj.MyAspectj">
+		<constructor-arg name="tx" ref="tx"></constructor-arg>
+	</bean>
+	
+	<!-- 3.AOP的配置 -->
+	<aop:config>
+		<!-- 
+			ref:引入切面引用
+		 -->
+		<aop:aspect ref="myAspectj">
+			<!-- 
+				<aop:pointcut>:用来写表达式
+					expression:表达式
+					id:唯一的标识
+			 -->
+			<aop:pointcut expression="execution( * com.qf.dao.*.*(..))" id="p1"/>
+			<!-- 
+				<aop:after>:方法之后调用的方法
+			 -->
+			<aop:after method="commit" pointcut-ref="p1"/>
+			<aop:before method="begin" pointcut-ref="p1"/>
+		</aop:aspect>
+	</aop:config>
+</beans>

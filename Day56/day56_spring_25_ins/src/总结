@@ -1,0 +1,20 @@
+
+
+
+1.对象创建方式
+	1)构造器(默认值)
+	2)静态工厂	
+		1)<bean>
+			1)class:静态工厂的全类名
+			2)factory-method:静态工厂中的静态方法
+			3)id:静态工厂创建的实例
+	3)非静态工厂
+		1)实例化非静态工厂
+			1)<bean>
+				a)class:非静态工厂的全类名
+				b)id:非静态工厂bean的唯一标识
+		2)实例化bean
+			1)<bean>
+				a)factory-class:非静态工厂bean
+				b)factory-method:非静态工厂中的方法
+				c)id:工厂创建的实例

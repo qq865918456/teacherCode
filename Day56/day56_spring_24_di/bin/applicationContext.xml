@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<!-- userService -->
+	<bean id="userService" class="com.qf.service.impl.UserServiceImpl">
+		<!-- 给userService中注入userDao,调用set方法注入 -->
+		<property name="userDao" ref="userDao"></property>
+		
+		<!-- 
+			ref:对象和对象之间的引用
+			value:文本值
+		 -->
+		<property name="name" value="admin"></property>
+		
+		<property name="price" value="12.2"></property>
+		
+		<property name="list">
+			<list>
+				<!-- 引入对象 -->
+<!-- 				<ref bean=""/> -->
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+			</list>
+		</property>
+		
+		<property name="ids">
+			<array>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+			</array>
+		</property>
+		
+		<property name="map">
+			<!-- props给属性对象(Properties) -->
+			<props>
+				<prop key="1">admin</prop>
+				<prop key="2">qf</prop>
+			</props>
+		</property>
+		
+	</bean>
+	
+	<!-- 接口
+		abstract:true(声明这是一个抽象类)
+		Spring不会帮我们实例化
+	 -->
+	<bean id="IUserDao" class="com.qf.dao.IUserDao" abstract="true"></bean>
+	
+	<!-- userDao -->
+	<bean id="userDao" class="com.qf.dao.impl.UserDaoImpl" parent="IUserDao"></bean>
+</beans>

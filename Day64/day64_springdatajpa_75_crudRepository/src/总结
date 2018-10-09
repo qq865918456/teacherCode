@@ -1,0 +1,28 @@
+
+
+
+
+1.SpringDataJPA
+	a)配置
+		1)添加jpa的约束文件
+		2)添加事务管理器
+			a)使用JPA的事务管理器
+		3)SpringDataJPA配置
+			1)<jpa:repositories>
+				1)transaction-manager-ref:事务管理器
+				2)entity-manager-factory-ref:实体类工厂
+				3)base-package：dao层的接口(可以扫描子)
+	b)定义dao层接口
+		1)继承Repository接口
+			a)实体类
+			b)主键类型
+		2)添加@RepositoryDefinition
+			a)实体类
+			b)主键类型
+		c)方法的定义规范
+			 1. 不是随便声明的. 而需要符合一定的规范
+			 2. 查询方法以 find | read | get 开头(比如 find、findBy、read、readBy、get、getBy)
+			 3. 涉及条件查询时，条件的属性用条件关键字连接，条件属性以首字母大写。
+			 4. 支持属性的级联查询. 若当前类有符合条件的属性, 则优先使用, 而不使用级联属性. 
+			 若需要使用级联属性, 则属性之间使用 _ 进行连接
+			

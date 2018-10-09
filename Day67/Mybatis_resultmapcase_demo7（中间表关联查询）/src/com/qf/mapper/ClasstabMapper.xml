@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- xml文件的dtd约束 -->
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qf.mapper.IClasstabMapper">
+	
+	<resultMap type="classtab" id="classtabMap">
+		<id column="id" property="id"/>
+		<result column="cname" property="cname"/>
+		<result column="cnumber" property="cnumber"/>
+		
+		<!-- 映射班级里的学生信息 -->
+		<collection property="stus" ofType="student">
+			<id column="sid" property="id"/>
+			<result column="name" property="name"/>
+			<result column="age" property="age"/>
+			<result column="cid" property="cid"/>
+			
+			<!-- 映射学生的课程的信息 -->
+			<collection property="courses" ofType="course">
+				<id column="cid" property="id"/>
+				<result column="coursename" property="courseName"/>
+			</collection>
+		</collection>
+	</resultMap>
+	
+	<select id="queryAll" resultMap="classtabMap">
+		select c.id, c.cname, c.cnumber, s.id as sid, s.name, s.age, m.cid, cs.coursename  from classtab c 
+			left join student s on s.cid = c.id
+			left join middle_student_course m on s.id = m.sid
+			left join course cs on cs.id = m.cid
+	</select>
+	
+	
+</mapper>
+

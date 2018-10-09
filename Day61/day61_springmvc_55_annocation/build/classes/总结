@@ -1,0 +1,14 @@
+
+
+
+1.注解实现
+	a)开启包扫描
+	b)写一个类添加Controller注解
+	c)@RequestMapping加到方法上面
+		1)value:访问方法的路径(/)
+		2)method:请求方式
+2.Controller的方法可以返回字符串，只写视图名称会跳转到视图页面
+3.ModelMap
+	1)它是LinkHashMap的子类
+	2)它是SPringMVC提供的
+	3)反倒ModelMap中的数据是放到Request

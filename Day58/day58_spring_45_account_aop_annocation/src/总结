@@ -1,0 +1,9 @@
+
+
+1.利用AOP思想控制事务--注解
+	a)开启注解驱动
+		1)<tx:annotation-driven>
+			a)transaction-manager:事务管理器
+	b)@Transactional
+		1)可以加到方法上面也可以加到类上面
+		2)事务的属性通过注解的属性设置

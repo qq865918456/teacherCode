@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<!-- 实例化默认调用的是构造器 -->
+	<bean id="userService" class="com.qf.service.impl.UserServiceImpl"></bean>
+	
+	<!-- 通过静态工厂初始化UserService -->
+	
+	<!-- 1.配置静态工厂 
+		class:静态工厂的全类名
+		factory-method:静态方法
+	-->
+	<bean id="userService2" class="com.qf.factory.UserServiceFactory" factory-method="getUserServceIml"></bean>
+	
+	
+	<!-- 2.配置非静态工厂实例化 -->
+	<!-- 2.1实例化非静态工厂 -->
+	<bean id="userFactory" class="com.qf.factory.UserServiceFactory2"></bean>
+	
+	<!-- 2.2通过非静态工厂实例化bean -->
+	<bean id="userService3" factory-bean="userFactory" factory-method="getUserServceIml"></bean>
+</beans>

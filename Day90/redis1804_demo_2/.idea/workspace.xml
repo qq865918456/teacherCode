@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9a379a5-d35a-4526-9d51-7e6810950a10" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/java_redis/target/" />
+    <ignored path="$PROJECT_DIR$/spring_redis/target/" />
+    <ignored path="$PROJECT_DIR$/springboot_redis/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="SpringbootRedisApplicationTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springboot_redis/src/test/java/com/qf/redis/springboot_redis/SpringbootRedisApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/java_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/java_redis/src/main/java/com/qf/redis/Main.java" />
+        <option value="$PROJECT_DIR$/spring_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_redis/src/test/java/com/qf/test/Main.java" />
+        <option value="$PROJECT_DIR$/springboot_redis/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring_redis/src/main/resources/applicationContext-redis.xml" />
+        <option value="$PROJECT_DIR$/springboot_redis/src/test/java/com/qf/redis/springboot_redis/SpringbootRedisApplicationTests.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\woker\JavaEE\maven\new_repository2" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="C:\woker\JavaEE\maven\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="124" />
+    <option name="y" value="29" />
+    <option name="width" value="1292" />
+    <option name="height" value="776" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="redis1804_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis1804_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SpringbootRedisApplicationTests.zsetType">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="SpringbootRedisApplicationTests.hashType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qf.redis.springboot_redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot_redis" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qf.redis.springboot_redis" />
+      <option name="MAIN_CLASS_NAME" value="com.qf.redis.springboot_redis.SpringbootRedisApplicationTests" />
+      <option name="METHOD_NAME" value="hashType" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpringbootRedisApplicationTests.listType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qf.redis.springboot_redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot_redis" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qf.redis.springboot_redis" />
+      <option name="MAIN_CLASS_NAME" value="com.qf.redis.springboot_redis.SpringbootRedisApplicationTests" />
+      <option name="METHOD_NAME" value="listType" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpringbootRedisApplicationTests.setType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qf.redis.springboot_redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot_redis" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qf.redis.springboot_redis" />
+      <option name="MAIN_CLASS_NAME" value="com.qf.redis.springboot_redis.SpringbootRedisApplicationTests" />
+      <option name="METHOD_NAME" value="setType" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpringbootRedisApplicationTests.stringType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qf.redis.springboot_redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot_redis" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qf.redis.springboot_redis" />
+      <option name="MAIN_CLASS_NAME" value="com.qf.redis.springboot_redis.SpringbootRedisApplicationTests" />
+      <option name="METHOD_NAME" value="stringType" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpringbootRedisApplicationTests.zsetType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qf.redis.springboot_redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot_redis" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qf.redis.springboot_redis" />
+      <option name="MAIN_CLASS_NAME" value="com.qf.redis.springboot_redis.SpringbootRedisApplicationTests" />
+      <option name="METHOD_NAME" value="zsetType" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="SpringbootRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qf.redis.springboot_redis.SpringbootRedisApplication" />
+      <module name="springboot_redis" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.SpringbootRedisApplication" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.stringType" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.hashType" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.listType" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.setType" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.zsetType" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.zsetType" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.setType" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.listType" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.hashType" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SpringbootRedisApplicationTests.stringType" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9a379a5-d35a-4526-9d51-7e6810950a10" name="Default" comment="" />
+      <created>1537841585117</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537841585117</updated>
+      <workItem from="1537841594688" duration="9891000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SpringbootRedisApplicationTests_hashType - 2018.09.25 at 14h 51m 42s.xml">
+      <configuration name="SpringbootRedisApplicationTests.hashType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootRedisApplicationTests_listType - 2018.09.25 at 15h 33m 58s.xml">
+      <configuration name="SpringbootRedisApplicationTests.listType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootRedisApplicationTests_setType - 2018.09.25 at 15h 44m 25s.xml">
+      <configuration name="SpringbootRedisApplicationTests.setType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootRedisApplicationTests_setType - 2018.09.25 at 15h 45m 57s.xml">
+      <configuration name="SpringbootRedisApplicationTests.setType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootRedisApplicationTests_setType - 2018.09.25 at 15h 46m 20s.xml">
+      <configuration name="SpringbootRedisApplicationTests.setType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootRedisApplicationTests_stringType - 2018.09.25 at 14h 26m 52s.xml">
+      <configuration name="SpringbootRedisApplicationTests.stringType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootRedisApplicationTests_stringType - 2018.09.25 at 14h 30m 02s.xml">
+      <configuration name="SpringbootRedisApplicationTests.stringType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootRedisApplicationTests_stringType - 2018.09.25 at 14h 32m 11s.xml">
+      <configuration name="SpringbootRedisApplicationTests.stringType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootRedisApplicationTests_stringType - 2018.09.25 at 14h 35m 25s.xml">
+      <configuration name="SpringbootRedisApplicationTests.stringType" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootRedisApplicationTests_zsetType - 2018.09.25 at 15h 53m 22s.xml">
+      <configuration name="SpringbootRedisApplicationTests.zsetType" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9891000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-12" y="-12" width="2264" height="1354" extended-state="7" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.450805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495379" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.450805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495379" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_redis/src/main/java/com/qf/redis/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.qf:spring_redis:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.qf:spring_redis:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.qf:spring_redis:1.0-SNAPSHOT</node>
+            <node x="" y="">junit:junit:jar:4.11</node>
+            <node x="" y="">junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.8.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.8.RELEASE/org.springframework.data:spring-data-commons:jar:1.13.8.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.8.RELEASE/org.springframework:spring-context:jar:4.3.12.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework.data:spring-data-keyvalue:jar:1.2.8.RELEASE/org.springframework:spring-context:jar:4.3.12.RELEASE/org.springframework:spring-expression:jar:4.3.12.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework:spring-tx:jar:4.3.12.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework:spring-tx:jar:4.3.12.RELEASE/org.springframework:spring-beans:jar:4.3.12.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework:spring-tx:jar:4.3.12.RELEASE/org.springframework:spring-core:jar:4.3.12.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework:spring-tx:jar:4.3.12.RELEASE/org.springframework:spring-core:jar:4.3.12.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework:spring-oxm:jar:4.3.12.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework:spring-aop:jar:4.3.12.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.springframework:spring-context-support:jar:4.3.12.RELEASE</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.8.8.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.7.25</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="692.0" y="390.0" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <marker date="1525792155333" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1525792155333" expanded="false" signature="159:1965" ph="..." />
+            <marker date="1525792155333" expanded="true" signature="2985:2992" ph="{}" />
+            <marker date="1525792155333" expanded="true" signature="3031:4371" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="4422:4433" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="4488:4494" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="4572:4641" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="4737:6158" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="6213:6746" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="6817:6893" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="7013:8718" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="7423:7561" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="8579:8598" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="8786:8861" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="8978:10103" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="9014:9148" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="10080:10095" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="10183:10254" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="10406:10511" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="10603:11058" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="11121:11132" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="11161:11167" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="11246:11502" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="11611:11645" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="11744:11755" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="11769:11775" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="11816:11827" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="11856:11862" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="11925:11936" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="11977:11983" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="12031:12042" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="12078:12084" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="12162:12233" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="12287:12298" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="12328:12334" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="12403:12414" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="12450:12456" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="12521:12532" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="12564:12570" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="12620:12631" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="12657:12663" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="12730:12741" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="12775:12781" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="12833:12844" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="12872:12878" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="12932:12943" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="12973:12979" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="13056:13115" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="13171:13182" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="13214:13220" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="13301:13364" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="13422:13433" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="13462:13468" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="13548:13605" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="13674:13685" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="13722:13728" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="13768:13957" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="13999:14010" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="14054:14060" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="14104:14249" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="14300:14561" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="14606:14704" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="14884:16180" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="16261:16708" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="16815:17313" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="17346:17599" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="17666:17785" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="17824:18068" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="17860:18011" ph="doInRedis(connection) -&gt; { " />
+            <marker date="1525792155333" expanded="false" signature="18036:18060" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="18100:18387" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="18171:18266" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="18358:18373" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="18432:18795" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="18562:18661" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="18752:18771" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="18830:19102" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="18917:19014" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="19073:19088" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="19178:19713" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="19335:19432" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="19684:19699" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="19767:20225" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="19854:19951" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="20196:20211" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="20290:20720" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="20498:20593" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="20691:20706" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="20755:21015" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="20839:20947" ph="doInRedis(connection) -&gt; { " />
+            <marker date="1525792155333" expanded="false" signature="20977:21001" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="21075:21494" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="21159:21250" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="21465:21480" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="21530:21938" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="21632:21737" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="21794:21809" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="21974:22247" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="22061:22158" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="22218:22233" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="22299:22578" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="22386:22483" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="22549:22564" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="22605:22876" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="22652:22747" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="22803:22818" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="22921:23271" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="23052:23147" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="23242:23257" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="23327:23675" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="23474:23571" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="23646:23661" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="23709:23982" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="23797:23896" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="23953:23968" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="24014:24281" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="24100:24195" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="24252:24267" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="24366:24736" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="24510:24606" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="24707:24722" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="24762:25010" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="24785:24907" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="24981:24996" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="25038:25288" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="25061:25183" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="25259:25274" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="25319:25608" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="25390:25485" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="25579:25594" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="25652:25933" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="25728:25823" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="25904:25919" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="25961:26211" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="25984:26106" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="26182:26197" ph="}" />
+            <marker date="1525792155333" expanded="false" signature="26256:26267" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="26313:26319" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="26406:26906" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="26607:26741" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="26806:26821" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="26985:27059" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="27178:27946" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="28001:28472" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="28247:28365" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="28443:28458" ph="}" />
+            <marker date="1525792155333" expanded="false" signature="28532:28543" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="28593:28599" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="28648:28795" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="28842:28985" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="29043:29054" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="29103:29109" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="29165:29176" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="29224:29230" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="29275:29414" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="29472:29483" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="29532:29538" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="29585:29728" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="29773:29912" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="29968:29979" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="30027:30033" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="30094:30241" ph="{...}" />
+            <marker date="1525792155333" expanded="true" signature="30314:30379" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="30439:30450" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="30489:30495" ph=" }" />
+            <marker date="1525792155333" expanded="false" signature="30547:30558" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="30600:30606" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="30670:30923" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="30693:30811" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="30900:30915" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="30974:31245" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="31010:31179" ph="doInRedis(connection) -&gt; { " />
+            <marker date="1525792155333" expanded="false" signature="31213:31237" ph=" }" />
+            <marker date="1525792155333" expanded="true" signature="31306:31556" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="31329:31447" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="31533:31548" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="31589:31834" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="31612:31730" ph="doInRedis(connection) -&gt; {" />
+            <marker date="1525792155333" expanded="false" signature="31811:31826" ph="}" />
+            <marker date="1525792155333" expanded="true" signature="31914:31987" ph="{...}" />
+            <marker date="1525792155333" expanded="false" signature="32048:32059" ph=" { " />
+            <marker date="1525792155333" expanded="false" signature="32090:32096" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="126" column="29" lean-forward="false" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_redis/src/test/java/com/qf/test/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_redis/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_redis/src/main/resources/applicationContext-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="19" column="67" lean-forward="false" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/requests/FilterRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot_redis/src/test/java/com/qf/redis/springboot_redis/SpringbootRedisApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="198" column="0" lean-forward="true" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.18122128" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

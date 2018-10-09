@@ -1,0 +1,10 @@
+
+
+
+1.Spring作用域
+	1)scope
+		a)prototype:多列(原型)
+		b)singlelton:单列(默认值)
+	Web的环境下
+		c)request:一次请求
+		d)session:一次会话

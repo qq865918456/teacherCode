@@ -1,0 +1,23 @@
+
+
+1.JPA的概念
+	a)JPA(Java Persistence API)是Sun官方提出的Java持久化规范,
+	b)通过面向对象的方式操作数据库
+2.SpringDataJPA
+	a)SpringDataJPA是JPA的一种实现
+	b)环境搭建
+		1)导入jar包
+			a)spring
+			b)springdata
+			c)HibernateJPA
+		2)配置文件
+			a)applicationContext.xml
+				1)数据源
+				2)Spring和HibernateJPA整合
+					a)LocalContainerEntityManagerFactoryBean(EntityManagerFactory)
+						1)数据源
+						2)JAP适配器
+						3)实体类的包名
+						4)JPA实现的属性
+		3)实体类
+			1)

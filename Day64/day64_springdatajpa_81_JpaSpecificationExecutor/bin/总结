@@ -1,0 +1,7 @@
+
+
+
+1.JpaSpecificationExecutor
+	a)该接口不是Repository体系
+	b)作用是级联查询，还可以完成分页，排序
+	c)继承需要加泛型

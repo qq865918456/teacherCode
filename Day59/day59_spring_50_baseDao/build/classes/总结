@@ -1,0 +1,9 @@
+
+
+
+1.Spring整合Junit
+	a)导入sprint-test.jar
+	b)注解
+		a)@RunWith(value=SpringJUnit4ClassRunner.class) // 在运行测试的环境上
+		b)ContextConfiguration(value="classpath:applicationContext.xml") // 指定配置文件的名称
+	c)自动注入

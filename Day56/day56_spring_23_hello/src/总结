@@ -1,0 +1,23 @@
+
+
+1.Spring概念
+	a)Spring它是一个一站式的框架
+	b)它是个巨大的工厂，主要生成对象的
+	c)两大核心
+		1)IOC(控制反转):将对象的创建权限交给Spring容器
+		2)AOP
+2.优点
+	a)里面的提供了事务的控制
+	b)AOP的编程
+3.搭建环境
+	1)导入jar包
+	2)配置文件
+		a)加入约束文件
+		b)<bean>:所有的Java类
+			1)id:bean的唯一标识
+			2)class:bean全类名
+	3)初始化Spring容器(ClassPathXmlApplciationContext("applicationContext.xml"))
+	4)获取对象
+	5)调用方法
+		a)避免强转
+	

@@ -1,0 +1,15 @@
+
+
+
+
+1.HibernteJPA
+	a)导入jar包
+	b)注解
+		1)@table
+		2)@entity
+		3)@id
+		4)@GeneratedValue(strategy=GenerationType.AUTO)
+		5)@OneTomay
+		6)@ManyToOne
+		7)@JoinClolumn:关联外键
+	c)在映射的时候要配置calss属性

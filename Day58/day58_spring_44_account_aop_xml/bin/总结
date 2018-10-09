@@ -1,0 +1,20 @@
+
+
+
+1.利用AOP的来管理事务
+	a)导入tx约束文件
+	b)配置事务的策略
+		a)<tx:advice>:
+			1)id:唯一标识
+			2)transaction-manager:事务管理器
+			3)<tx:attributes>
+				a)method:指的方法名称，支持通配符
+				b)isolation:事务的隔离级别
+				c)propagation:事务传播属性
+				d)read-only:是否只读
+	c)AOP的配置			
+		1)<aop:config>
+			a)<aop:advisor>
+				1)advice-ref:事务策略id
+				2)pointcut:表达式
+2.表达式和方法都能匹配到的时候才会交给事务管理器处理，如果匹配不到或者只匹配到其中一个就使用默认的事务

@@ -1,0 +1,36 @@
+
+
+
+1.SSH整合
+	a)Spring和Hibernate整合
+		1)导入jar包
+		2)配置文件
+			a)hibnerate配置文件
+				1)映射文件
+				2)核心的配置文件
+			b)Spring配置文件
+				1)数据源
+				2)sessionFactory
+				3)事务的配置
+				4)自定义bean
+					1)service
+					2)dao
+		3)dao层
+			1)继承HibernateTemplate
+			2)注入sessionFactory
+		4)测试
+			1)Spring和JUnit整合
+	b)SSH
+		1)web.xml添加添加监听器
+		2)写一个Controller，里面调用service
+	c)在页面测试
+2.Spring容器(父)环绕SprignMVC容器(子)的关系
+	a)看画的图
+3.<context:component-scan>
+	1)base-package:包名
+	2)use-default-filters
+		1)true(默认值):扫描加了@Controller，@Service,@Repository注解bean
+		2)false:要扫描按个注解需要指定
+		3)<context:include-filter>:扫描包含该注解的bean
+			a)expression：注解的全类名
+		4)context:exclude-filter：:扫描不包含该注解的bean

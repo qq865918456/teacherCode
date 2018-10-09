@@ -1,0 +1,16 @@
+
+
+
+
+1.静态资源忽略
+	1)<mvc:resources>
+		a)location:静态资源的位置
+		b)mapping:静态资源的访问路径
+	2)<mvc:default-servlet-handler>
+		a)default-servlet-name:servletName
+			1)default:是tocmat提供的一个Servlet，里面做的事情就是IO流读写
+2.Controller创建需要DefaultAnnotationHandlerMapping和AnnotationMethodHandlerAdapter，
+	这两个bean默认值会自动注册，当使用<mvc:resources>或者<mvc:default-servlet-handler>就
+	不会自动注册，所以需要手动注册(<mvc:annotation-driven/>);
+3.@ResponseBody
+	1)把方法的返回值直接响应给浏览器，不当成视图解析

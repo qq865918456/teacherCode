@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+	<!-- 注解实现要开启包扫描 -->
+	<context:component-scan base-package="com.qf.service,com.qf.dao"/>
+
+	<!-- 1.加载属性文件 -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
+
+	<!-- 2.数据源 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="jdbcUrl" value="${jdbc.url}"></property>
+		<property name="user" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+		<property name="driverClass" value="${jdbc.driver}"></property>
+	</bean>
+
+	<!-- 3.整合 -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="configLocation" value="classpath:hibernate.cfg.xml"></property>
+		<property name="mappingLocations" value="classpath:com/qf/entity/*.hbm.xml"></property>
+	</bean>
+	
+	<!-- 4.事务管理器 -->
+	<bean id ="txManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 5.事务属性 -->
+	<tx:advice id="txAdvices" transaction-manager="txManager">
+		<tx:attributes>
+			<!-- 读 -->
+			<tx:method name="get*" isolation="DEFAULT" propagation="REQUIRED" read-only="true"/>
+			<tx:method name="find*" isolation="DEFAULT" propagation="REQUIRED" read-only="true"/>
+			
+			<!-- 写 -->
+			<tx:method name="add*" isolation="DEFAULT" propagation="REQUIRED" read-only="false"/>
+			<tx:method name="update*" isolation="DEFAULT" propagation="REQUIRED" read-only="false"/>
+			<tx:method name="delete*" isolation="DEFAULT" propagation="REQUIRED" read-only="false"/>
+		</tx:attributes>
+	</tx:advice>
+	
+	<!-- 6.AOP配置 -->
+	<aop:config>
+		<!-- ..代表子包 -->
+		<aop:advisor advice-ref="txAdvices" pointcut="execution(* com.qf.service.*.*(..))"/>
+	</aop:config>
+	
+
+</beans>

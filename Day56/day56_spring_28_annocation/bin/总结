@@ -1,0 +1,20 @@
+
+
+
+1.注解实现
+	a)开启包扫描
+		1)<context:component-scan>
+			a)base-package:包名(会扫描指定包或子包)，可以指定多个包名(包名和包名之间用逗号隔开)
+	b)注解
+		1)@Component
+			a)加了这个注解bean会被Spring容器维护
+			b)默认id是类名首字母小写，可以通过value属性需改
+		2)@Autowired:按照类型注入
+			1)required:是否必须要注入
+				a)true(默认值):必须要注入，如果注入失败导致Spring容器初始化失败
+				b)flase:如果有注入，没有就不注入
+			2)如果存在多个类型会抛出异常
+				a)@Qualifier:通过该注解指定需要注入那个
+		3)@Resource:按照类型注入
+			1)存在多个类型的时候通过name指定要注入那个
+		4)@Scope:作用域

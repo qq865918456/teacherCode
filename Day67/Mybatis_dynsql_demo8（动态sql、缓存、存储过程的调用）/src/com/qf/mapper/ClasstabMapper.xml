@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- xml文件的dtd约束 -->
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qf.mapper.IClasstabMapper">
+	
+	<resultMap type="classtab" id="classtabMap">
+		<!-- 对多 -->
+		<collection property="stus" column="id" select="com.qf.mapper.IStudentMapper.queryAllByCid"/>
+	</resultMap>
+	
+	<select id="queryOne" resultMap="classtabMap">
+		select * from classtab where id = #{id}
+	</select>
+	
+	<select id="queryAll" resultMap="classtabMap">
+		select * from classtab
+	</select>
+	
+</mapper>
+

@@ -1,0 +1,6 @@
+
+
+
+1.JdbcDaoSupport
+	a)注入数据源或者JdbcTemplate就可以使用
+	b)对JdbcTemplate类的一个封装

@@ -1,0 +1,10 @@
+
+
+
+1.Spring对Dao层的支持
+	1)JdbcTempate
+		a)设置dataSource
+			1)c3p0
+			2)dbcp
+		b)更新:update("sql",...)
+		c)查询:query("sqls",new RowMapping(){});

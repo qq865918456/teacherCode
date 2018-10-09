@@ -1,0 +1,11 @@
+
+
+
+1.文件上传
+	a)导入jar包
+	b)设置文件上传解析器
+		1)文件编码
+		2)文件大小
+	c)表单中修改enctype属性
+	d)Controller中接收MultipartFile
+		1)@RequestParam("表单中的属性")

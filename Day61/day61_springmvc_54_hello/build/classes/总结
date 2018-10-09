@@ -1,0 +1,24 @@
+
+
+1.SpringMVC环境搭建
+	1)导入jar包
+	2)配置文件
+		a)命名:核心的servlet-name-servlet.xml
+		b)位置:WEB-INF下面
+		c)内容
+			1)自定义Controller
+				a)<bean>
+					1)class:Controller全类名
+					2)name:Controller的访问路径
+			2)视图解析器
+				a)视图
+				b)视图前缀
+				c)视图的后缀
+	3)自定义Controller
+		1)写一个类实现Controller接口，复写里面的方法
+			1)ModelAndView
+	4)web.xml中配置核心的servlet(SpringMVC入口)
+	
+2.SpringMVC概念
+	1)它一个Web层框架
+	2)他里面支持RestFul风格

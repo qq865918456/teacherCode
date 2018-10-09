@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.qf.entity">
+	
+	<class name="Teacher" table="t_teacher">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name"/>
+		
+		
+		<!-- 
+			级联操作的时候，关系维护在那边保存的时候就保存那边
+		 -->
+		<set name="classes" table="t_teacher_classes" cascade="all">
+			<key column="t_id"/>
+			<many-to-many class="Classes" column="c_id"/>
+		</set>
+		
+	</class>
+
+</hibernate-mapping>

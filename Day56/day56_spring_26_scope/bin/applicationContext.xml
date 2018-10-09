@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<!-- 
+		Spring创建bean默认是单列
+			scope:
+				1)prototype:多列(原型)
+				2)singlelton:单列(默认值)
+			Web的环境下
+				3)request:一次请求
+				4)session:一次会话
+	 -->
+	<bean id="userService" class="com.qf.service.impl.UserServiceImpl" scope="singleton"></bean>
+	
+</beans>

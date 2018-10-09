@@ -1,0 +1,15 @@
+
+
+1.切面
+	a)如何定义一个切面
+		1)类上面加@Aspect
+	b)切面中包含了通知
+		1)前置
+		2)后置
+	c)表达式
+		1)execution(* com.qf.dao.*.*(..))
+	d)如何创建代理类
+		1)AspectJProxyFactory
+			a)设置目标对象
+			b)添加切面
+			c)获取代理类

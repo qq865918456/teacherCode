@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- packate:实体类的包名 -->
+<hibernate-mapping package="com.qf.entity">
+	
+	<!-- 
+		name:类名称
+		table：表名称
+	 -->
+	<class name="User" table="t_user7">
+	
+		<!-- id标签一般修饰主键 -->
+		<!-- 如果对象中的属性和列名称一致，column可以不用写 -->
+		<id name="id">
+			<!-- 主键增长策略 -->
+			<generator class="native" />
+		</id>
+		
+		<!-- 其他属性多用property修饰 -->
+		<!-- 
+			name:对象中的属性
+			column:表中的字段名称
+		 -->
+		<property name="name" column="username" />
+		<property name="password"/>
+		<property name="sex"  />
+		<property name="phone"  />
+	</class>
+
+</hibernate-mapping>

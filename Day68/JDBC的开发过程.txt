@@ -1,0 +1,23 @@
+String sql = "";
+Class.forName("com.mysql.jdbc.Driver");
+1、获得数据库的链接
+Connection conn = DriverManager.getConnection（xxx）;
+
+2、通过数据库链接获得数据库会话对象 - Statment
+//Statment statement = conn.getStatment();
+PreparseStatment ps = conn.preparseStatment(sql);//将sql语句传递给mysql进行编译
+//CallableStatement
+
+3、设置参数
+ps.setInt(1, xxxx);
+ps.setString(2, xxx);
+
+
+3、执行sql
+//ResultSet reslutset = statement.executeQuery（sql）;
+ResultSet resultset = ps.executeQuery();
+
+4、将resultSet结果集转换成实体类
+
+5、关闭连接
+conn.close

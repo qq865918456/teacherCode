@@ -1,0 +1,44 @@
+package com.qf.oa.controller;
+
+import com.qf.oa.entity.Caigou;
+import com.qf.oa.entity.Employee;
+import com.qf.oa.service.ICaigouService;
+import org.apache.shiro.SecurityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
+
+@Controller
+@RequestMapping("/caigou")
+public class CaigouController {
+
+    @Autowired
+    private ICaigouService caigouService;
+
+    @RequestMapping("/caigoulist")
+    public String caigouManager(Model model){
+        Employee employee = (Employee) SecurityUtils.getSubject().getPrincipal();
+        List<Caigou> caigouList = caigouService.queryByEid(employee.getId());
+        model.addAttribute("clist",caigouList);
+        return "caigoulist";
+    }
+
+    /**
+     * 申请采购
+     * @param caigou
+     * @return
+     */
+    @RequestMapping("/insert")
+    public String caigouInsert(Caigou caigou){
+        Employee employee = (Employee) SecurityUtils.getSubject().getPrincipal();
+        caigou.setEid(employee.getId());
+        caigouService.insertCaigou(caigou);
+
+        //开启流程
+
+        return "redirect:/caigou/caigoulist";
+    }
+}

@@ -1,0 +1,18 @@
+
+
+1.JQPL
+	1.是JPQ中的查询语句
+	2)JPQL提供的查询语法主要分为三类：
+		a)查询用的 SELECT 语法
+		b)更新用的 UPDATE 语法
+		c)删除用的 DELETE 语法
+		d)不支持INSERT语句
+	3)@Query
+		a)value:可以写JPQL语句
+		b)nativeQuery:true表单表原生的sql语句
+		c)加了@query注解后不会再去解析方法名称，
+2.参数的传递
+	1)按照顺序
+		a)?1
+	2)按照名称
+		a)@param("name")

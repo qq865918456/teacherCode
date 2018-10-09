@@ -1,0 +1,8 @@
+
+
+
+1.RestFul
+	a)@RequestMapping中添加占位符
+	b)@@PathVariable("要和@Re...变量一样")
+	c)资源操作：请求方式
+	d)资源定位:url

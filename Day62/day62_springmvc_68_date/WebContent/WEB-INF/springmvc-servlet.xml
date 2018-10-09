@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop 
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<mvc:annotation-driven />
+
+	<context:component-scan base-package="com.qf.controller" />
+
+	<!-- 视图解析器 -->
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+
+	<!-- 异常处理的bean -->
+	<!-- 
+		异常处理的机制：出现异常后先找当前的异常是否配置
+			1)如果配置了就跳转到指定的页面
+			2)如果没有配置就找父类
+				1)找到就就跳转过去
+				2)找不到就回到默认错误页面
+	 -->
+	 
+<!-- 	<bean -->
+<!-- 		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver"> -->
+		<!-- 定义默认的异常处理页面，当该异常类型的注册时使用 -->
+<!-- 		<property name="defaultErrorView" value="error"></property> -->
+		
+		<!-- 定义异常处理页面用来获取异常信息的变量名，默认名为exception -->
+<!-- 		<property name="exceptionAttribute" value="ex"></property> -->
+		
+		<!-- 定义需要特殊处理的异常，用类名或完全路径名作为key，异常页面名字作为值 -->
+<!-- 		<property name="exceptionMappings"> -->
+<!-- 			<props> -->
+<!-- 				算出异常 -->
+<!-- 				<prop key="java.lang.RuntimeException"> -->
+<!-- 					error1 -->
+<!-- 				</prop> -->
+<!-- 			</props> -->
+<!-- 		</property> -->
+<!-- 	</bean> -->
+
+</beans>

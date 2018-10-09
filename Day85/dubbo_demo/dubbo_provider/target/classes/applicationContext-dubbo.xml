@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 服务提供者需要配置的内容 -->
+    <context:component-scan base-package="com.qf.service"/>
+
+
+    <!-- 设置提供者的名称 - 和消费者不要一样 -->
+    <dubbo:application name="server-provider"/>
+
+    <!-- 设置服务的注册地址 -->
+    <dubbo:registry address="192.168.226.130" protocol="zookeeper" port="2181"/>
+    <!--<dubbo:registry address="zookeeper://192.168.226.130:2181"/>-->
+
+    <!-- 设置暴露服务的协议和端口 -->
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+    <!-- 设置需要注册的服务 -->
+    <dubbo:service interface="com.qf.service.IStuService" ref="stuServiceImpl" retries="0" timeout="1000"/>
+
+</beans>

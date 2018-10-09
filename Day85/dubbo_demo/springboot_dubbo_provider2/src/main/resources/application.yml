@@ -1,0 +1,9 @@
+dubbo:
+  application:
+    name: server_provider
+  registry:
+    address: zookeeper://192.168.226.130:2181
+  protocol:
+    port: 20881
+server:
+  port: 8082

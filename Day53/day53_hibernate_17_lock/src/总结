@@ -1,0 +1,17 @@
+
+
+
+1.锁
+	1)锁的出现就是决定并发问题
+	2)悲观锁：利用数据库锁机制实现
+		a)select * from t_user where id = 1 for update
+		b)Hibernate实现
+			1)session.get(Temp.class, 117646, LockOptions.UPGRADE)
+	3)乐观锁:利用版本号实现
+		a)提交的时候先判断版本号是否一致
+			1)如果一致就提交，版本号自增
+			2)如果不一致不让提交，说明数据已经被修改了
+		b)Hibernate实现
+			1)表和对象中各自添加version字段
+			2)用<version>建立关系
+			

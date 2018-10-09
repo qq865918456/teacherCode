@@ -1,0 +1,45 @@
+
+
+1.HQL
+	1)概念
+		a)它是一个面向对象的查询语句
+		b)它是区分大小写的
+	2)如何调用
+		a)Query query = sesson.createQuery("hql");
+	3)查询全部
+		a)query.List();
+	4)查询单个对象
+		a)query.uniqueResult();
+	5)排序
+	6)分组
+	7)投影
+		a)如果显示单个字段用字段对象类型接收
+		b)如果实现多个字段用对象数组接受
+		c)可以调用构造器
+	8)分页
+		1)query.setFirstResult(0);// 起始的行数
+		2)query.setMaxResults(3); // 每页显示的条数
+	9)聚合函数
+		1)count:返回long类型
+		2)max():返回字段类型对应的类型
+	10)绑定参数
+		1)?
+		2):id
+		3)给占位符赋值
+			a)不同的类型调用不同的方法赋值
+			b)query.setParameter("","")-->setObject();
+	11)连接查询
+		1)笛卡尔积
+		2)左/右连接
+			a)fetch
+		3)from后面根多张表
+			a)关联条件加载where后面
+	12)命名查询
+		1)局部
+			a)定义在calss节点里面
+			b)调用：session.getNamedQuery(package.name.queryName)
+			c)
+		2)全局
+			a)定义在calss节点外面
+			b)调用：session.getNamedQuery(queryName)
+	

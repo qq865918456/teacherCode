@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>学生管理</h1>
+
+    <table>
+        <tr>
+            <td>编号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>班级号</td>
+            <td>操作</td>
+        </tr>
+
+        <tr th:each="stu : ${stus}">
+            <td th:text="${stu.id}">编号</td>
+            <td><a th:href="${#request.getContextPath() + '/stu/querybyid/' + stu.id}" th:text="${stu.name}">姓名</a></td>
+            <td th:text="${stu.age}">年龄</td>
+            <td th:text="${stu.cid}">班级号</td>
+            <td><a th:href="${#request.getContextPath() + '/stu/deletebyid/' + stu.id}">删除</a></td>
+        </tr>
+
+    </table>
+</body>
+</html>

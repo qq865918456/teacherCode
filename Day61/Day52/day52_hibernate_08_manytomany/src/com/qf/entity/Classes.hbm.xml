@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.qf.entity">
+	
+	<class name="Classes" table="t_classes">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name"/>
+		
+		<!-- 
+			多对多的情况关系默认两边都维护，一般只一方维护就可以
+			table:多对多的中间表
+		 -->
+		<set name="teachers" table="t_teacher_classes" inverse="true">
+			<!-- 当前表在中间表的外键 -->
+			<key column="c_id"></key>
+			<!-- 
+				class:另一方的类型
+				column：另一张表在中间表的外键
+			 -->
+			<many-to-many class="Teacher" column="t_id"/>
+		</set>
+		
+	</class>
+
+</hibernate-mapping>
